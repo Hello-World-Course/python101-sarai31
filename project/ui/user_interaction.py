@@ -1,9 +1,9 @@
 # THIS CODE IS WRONG, FIX IT AND ADD NEW CODE
-name = input("Hello, whats your name")
+name = input("Hello, whats your name ")
 
 #Check if the name length is greater than "dani"
 if len(name) > len("dani"):
-    board_size = int(input(f"{name}, please choose board size\ninput:> "))
+    board_size = int(input(f"{name}, please choose board size\n"))
 
     # Check if board size is greater than 9
     if board_size > 9:
