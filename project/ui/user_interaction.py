@@ -10,7 +10,7 @@ if len(name) > len("dani"):
         print(f"{name}, the board size {board_size} is greater than 9.")
     else:
         # If the board size is 9 or less, continue asking for the number of mines
-        mines = int(input(f"{name}, for board size {board_size}, choose number of mines to allocate\ninput:> "))
+        mines = int(input(f"{name}, for board size {board_size}, choose number of mines to allocate\n"))
         print(f"{name}, the board size is: {board_size}, number of mines is: {mines}. ENJOY!")
 
 else:
