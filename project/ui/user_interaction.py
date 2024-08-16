@@ -19,8 +19,6 @@
 name = None
 board_size = None
 number_of_mines = None
-
-
 # player name
 name_input = input("Hello, whats your name")
 if len(name_input) < 3:
@@ -46,7 +44,6 @@ else:
                 raise ValueError
         except ValueError:
             print(f"{name}, you have entered illegal number of mines")
-
 
 print(f"name = {name}")
 print(f"board_size = {board_size}")
