@@ -1,5 +1,4 @@
 # THIS CODE IS WRONG, FIX IT AND ADD NEW CODE
-
 # name = input("Hello, whats your name")
 # #Check if the name length is greater than "dani"
 # if len(name) > len("dani"):
