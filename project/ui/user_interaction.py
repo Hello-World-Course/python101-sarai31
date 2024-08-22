@@ -32,10 +32,10 @@ else:
     try:
         board_size = int(board_size_input)  # Try to convert to integer
         if board_size == 0:
-            print("Board size cannot be zero")
+            print(f"{name}, you have entered illegal board size")
             board_size = None  # Set to None if board size is 0
         elif board_size < 0:
-            print("Board size cannot be negative")
+            print(f"{name}, you have entered illegal board size")
             board_size = None  # Set to None if board size is negative
         elif board_size >= 26:  # Check for too large board sizes
             print(f"{name}, you have entered an illegal board size")
