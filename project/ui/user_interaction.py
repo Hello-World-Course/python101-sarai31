@@ -55,7 +55,3 @@ else:
             print(f"{name}, you have entered illegal number of mines")
             number_of_mines = None
 
-print(f"name = {name}")
-print(f"board_size = {board_size}")
-print(f"number_of_mines = {number_of_mines}")
-
