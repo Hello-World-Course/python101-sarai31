@@ -57,69 +57,6 @@ else:
             print(f"{name}, you have entered illegal number of mines")
             number_of_mines = None  # Set to None in case of invalid input
 
-
-
-
-
-
-
-
-
-
-# # player name
-# name_input = input("Hello, whats your name")
-# if len(name_input) < 3:
-#     print("Your name is too short")
-# else:
-#     name = name_input
-#
-#     # board size
-#     board_size_input = input(f"{name}, please choose board size")
-#     try:
-#         if board_size == 0:
-#             print("Board size cannot be zero")
-#             board_size = None  # Explicitly set to None if board size is invalid
-#         elif board_size < 0:
-#             print("Board size cannot be negative")
-#             board_size = None
-#         elif board_size >= 26:  # Check for too large board sizes
-#             raise ValueError
-#     except ValueError:
-#         print(f"{name}, you have entered an illegal board size")
-#         board_size = None  # Set to None in case of an exception
-#
-#     # If board_size is None, return None (terminate the process)
-#     if board_size is not None:
-#         # Number of mines input
-#         number_of_mines_input = input(f"{name}, for board size {board_size}, choose number of mines to allocate")
-#         try:
-#             number_of_mines = int(number_of_mines_input)
-#             if number_of_mines <= 0 or number_of_mines >= (board_size * board_size) // 2:  # Limit number of mines
-#                 raise ValueError
-#         except ValueError:
-#             # Display only the expected message
-#             print(f"{name}, you have entered illegal number of mines")
-#             number_of_mines = None
-
-
-
-    #     if board_size <= 0 or board_size >= 26:  # check big size of board
-    #         raise ValueError
-    # except ValueError:
-    #     print(f"{name}, you have entered illegal number of mines")
-    # else:
-    #     # number of mines input
-    #     number_of_mines_input = input(f"{name}, for board size {board_size}, choose number of mines to allocate")
-    #     try:
-    #         number_of_mines = int(number_of_mines_input)
-    #         if number_of_mines < 0:
-    #             print("Board size cannot be negative")
-    #             number_of_mines = None
-    #         # check that number of mines input
-    #         if number_of_mines < 1 or number_of_mines >= board_size * board_size / 2:
-    #             raise ValueError
-    #     except ValueError:
-    #         print(f"{name}, you have entered illegal number of mines")
 print(f"name = {name}")
 print(f"board_size = {board_size}")
 print(f"number_of_mines = {number_of_mines}")
