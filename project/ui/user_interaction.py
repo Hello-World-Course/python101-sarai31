@@ -23,7 +23,6 @@ number_of_mines = None
 name_input = input("Hello, whats your name")
 if len(name_input) < 3:
     print("Your name is too short")
-    exit()
 else:
     name = name_input
 
@@ -33,10 +32,13 @@ else:
         board_size = int(board_size_input)  # Try to convert to integer
         if board_size == 0:
             print(f"{name}, you have entered illegal board size")
+            board_size = None
         elif board_size < 0:
             print(f"{name}, you have entered illegal board size")
+            board_size = None
         elif board_size >= 26:  # Check for too large board sizes
             print(f"{name}, you have entered an illegal board size")
+            board_size = None
     except ValueError:
         print(f"{name}, you have entered an illegal board size")
 
@@ -48,8 +50,10 @@ else:
             number_of_mines = int(number_of_mines_input)  # Try to convert to integer
             if number_of_mines <= 0 or number_of_mines >= (board_size * board_size) // 2:
                 print(f"{name}, you have entered illegal number of mines")
+                number_of_mines = None
         except ValueError:
             print(f"{name}, you have entered illegal number of mines")
+            number_of_mines = None
 
 print(f"name = {name}")
 print(f"board_size = {board_size}")
