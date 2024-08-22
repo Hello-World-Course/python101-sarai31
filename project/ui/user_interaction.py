@@ -29,6 +29,9 @@ else:
     board_size_input = input(f"{name}, please choose board size")
     try:
         board_size = int(board_size_input)
+        if board_size < 0:
+            print("Board size cannot be negative")
+            board_size = None
         if board_size <= 0 or board_size >= 26:  # check big size of board
             raise ValueError
     except ValueError:
@@ -38,6 +41,9 @@ else:
         number_of_mines_input = input(f"{name}, for board size {board_size}, choose number of mines to allocate")
         try:
             number_of_mines = int(number_of_mines_input)
+            if number_of_mines < 0:
+                print("Board size cannot be negative")
+                number_of_mines = None
             # check that number of mines input
             if number_of_mines < 1 or number_of_mines >= board_size * board_size / 2:
                 raise ValueError
