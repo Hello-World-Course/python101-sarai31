@@ -23,6 +23,7 @@ number_of_mines = None
 name_input = input("Hello, whats your name")
 if len(name_input) < 3:
     print("Your name is too short")
+    exit()
 else:
     name = name_input
 
